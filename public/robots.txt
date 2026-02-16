@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Block access to admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://packmovego.com/sitemap.xml 

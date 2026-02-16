@@ -1,0 +1,30 @@
+{
+  "name": "Pack Move Go",
+  "short_name": "Pack Move Go",
+  "description": "Professional moving services - From packing to delivery, we handle every detail with care",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/images/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/moving-truck.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#1d4ed8",
+  "background_color": "#1e40af",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["business", "transportation", "services"],
+  "lang": "en-US"
+} 

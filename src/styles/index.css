@@ -1,0 +1,135 @@
+/* Optimized Tailwind CSS imports - only load what's needed */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Essential loading spinner only - minimal CSS for faster loading */
+.loading-spinner {
+  @apply animate-spin rounded-full border-2 border-gray-300 border-t-blue-600;
+}
+
+/* Focus styles for accessibility */
+.focus-visible:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Critical animations for loading */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optimized loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.loaded {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+/* Fast loading optimizations */
+.fast-load {
+  display: none !important;
+}
+
+/* Critical layout classes */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimize images for faster loading */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optimize links for faster interaction */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optimize buttons for faster interaction */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* Optimize form elements */
+input, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Critical responsive utilities */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-hidden {
+    display: none;
+  }
+} 
