@@ -1,0 +1,86 @@
+{
+  "images": [
+    {
+      "path": "favicon.ico",
+      "size": 15360,
+      "sizeKB": "15.0",
+      "format": "ico",
+      "purpose": "favicon",
+      "priority": "critical",
+      "cache": "long-term",
+      "cacheDuration": "31536000",
+      "preload": false,
+      "note": "Automatically requested by browser, no preload needed"
+    },
+    {
+      "path": "favicon/android-chrome-192x192.png",
+      "size": 71352,
+      "sizeKB": "69.7",
+      "format": "png",
+      "purpose": "favicon"
+    },
+    {
+      "path": "favicon/android-chrome-512x512.png",
+      "size": 459738,
+      "sizeKB": "449.0",
+      "format": "png",
+      "purpose": "favicon"
+    },
+    {
+      "path": "favicon/apple-touch-icon.png",
+      "size": 63821,
+      "sizeKB": "62.3",
+      "format": "png",
+      "purpose": "favicon"
+    },
+    {
+      "path": "favicon/favicon-16x16.png",
+      "size": 926,
+      "sizeKB": "0.9",
+      "format": "png",
+      "purpose": "favicon"
+    },
+    {
+      "path": "favicon/favicon-32x32.png",
+      "size": 2800,
+      "sizeKB": "2.7",
+      "format": "png",
+      "purpose": "favicon"
+    },
+    {
+      "path": "moving-truck.webp",
+      "size": 245094,
+      "sizeKB": "239.3",
+      "format": "webp",
+      "purpose": "hero-background",
+      "priority": "high",
+      "cache": "long-term",
+      "cacheDuration": "31536000",
+      "preload": false,
+      "note": "Used in Hero component background, cached for 1 year, no preload to avoid warnings"
+    },
+
+    {
+      "path": "moving-truck.png",
+      "size": 1989385,
+      "sizeKB": "1942.8",
+      "format": "png",
+      "purpose": "hero-background-fallback"
+    },
+
+  ],
+  "generated": "2025-01-11T12:00:00.000Z",
+  "version": "2.0",
+  "description": "Image manifest for Pack Move Go website assets",
+  "caching": {
+    "critical": {
+      "favicon.ico": "1 year (31536000 seconds) - no preload needed",
+      "moving-truck.webp": "1 year (31536000 seconds) - cached, no preload to avoid warnings"
+    },
+    "standard": {
+      "manifest files": "1 hour (3600 seconds)",
+      "other images": "1 hour (3600 seconds)"
+    },
+    "strategy": "Rely on long-term caching rather than preloading to avoid browser warnings while maintaining excellent performance"
+  }
+}

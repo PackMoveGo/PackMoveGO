@@ -1,0 +1,29 @@
+CHANGELOG
+=========
+
+All notable public-facing changes are documented here.
+This changelog intentionally avoids sensitive infrastructure details.
+
+[Unreleased]
+------------
+
+### Changed
+- Hardened repository docs for public release and contributor onboarding.
+- Added issue and pull request templates with security reminders.
+- Reduced exposure of internal implementation details in public docs.
+
+### Security
+- Removed hardcoded secret fallback behavior from frontend service code.
+- Reduced secret-adjacent logging in API request flows.
+- Added stronger `.gitignore` coverage for backup/artifact files.
+- Updated env example guidance to prevent accidental credential leakage.
+
+[0.1.0] - 2026-02-15
+--------------------
+
+### Added
+- Initial public-ready frontend structure and docs.
+- Contributor guidance (`CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`).
+
+### Notes
+- For private vulnerability reporting, see `SECURITY.md`.
